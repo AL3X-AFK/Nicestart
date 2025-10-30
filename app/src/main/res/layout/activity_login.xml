@@ -66,7 +66,28 @@
     <Button
         android:id="@+id/button"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"/>
+        android:layout_height="60dp"
+        android:backgroundTint="@color/red"
+        android:onClick="openMain"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/til2"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        android:layout_marginTop="15dp"
+        style=""/>
+
+    <Button
+        android:id="@+id/buttoninverse"
+        style="@style/buttonlined"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:onClick="openSignup"
+        android:text="@string/signup"
+        app:layout_constraintTop_toBottomOf="@id/button"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+    />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline1"
