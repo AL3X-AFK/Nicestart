@@ -10,10 +10,10 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         android:layout_marginTop="48dp"
-        android:src="@drawable/star_fall_2_"
+        android:src="@drawable/shark_bite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -33,7 +33,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:alpha="0.6"
+            android:alpha="0.7"
             android:background="@color/white"
             android:drawableStart="@drawable/usericon"
             android:hint="Username"
@@ -55,7 +55,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:alpha="0.6"
+            android:alpha="0.7"
             android:background="@color/white"
             android:drawableStart="@drawable/key"
             android:hint="Password"
@@ -65,23 +65,16 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:backgroundTint="@color/red"
+        style="@style/buttonB"
         android:onClick="openMain"
         android:text="@string/login"
-        android:textColor="@color/white"
-        app:layout_constraintTop_toBottomOf="@id/til2"
-        app:layout_constraintStart_toStartOf="@id/guideline1"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
-        android:layout_marginTop="15dp"
-        style=""/>
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/til2" />
 
     <Button
         android:id="@+id/buttoninverse"
-        style="@style/buttonlined"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
+        style="@style/buttonoutlined"
         android:onClick="openSignup"
         android:text="@string/signup"
         app:layout_constraintTop_toBottomOf="@id/button"
