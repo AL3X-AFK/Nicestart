@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
-    tools:context=".Login">
+    tools:context=".Signup"
+    android:background="@drawable/gradient">
 
     <ImageView
         android:id="@+id/logo"
@@ -28,7 +28,6 @@
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         app:layout_constraintTop_toBottomOf="@id/logo"
         app:startIconDrawable="@drawable/usericon"
-        android:hint="Username"
         >
 
         <EditText
@@ -37,6 +36,7 @@
             android:alpha="0.7"
             android:background="@color/white"
             android:drawableStart="@drawable/usericon"
+            android:hint="Username"
             />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -63,24 +63,46 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/til2"
+        app:startIconDrawable="@drawable/email_svgrepo_com"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:background="@color/white"
+            android:drawableStart="@drawable/email_svgrepo_com"
+            android:hint="E-mail"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
     <Button
         android:id="@+id/button"
         style="@style/buttonB"
         android:onClick="openMain"
-        android:text="@string/login"
+        android:text="@string/signup"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         app:layout_constraintStart_toStartOf="@id/guideline1"
-        app:layout_constraintTop_toBottomOf="@id/til2" />
+        app:layout_constraintTop_toBottomOf="@id/til3" />
 
     <Button
         android:id="@+id/buttoninverse"
         style="@style/buttonoutlined"
-        android:onClick="openSignup"
-        android:text="@string/signup"
+        android:onClick="openLogin"
+        android:text="@string/cancel"
         app:layout_constraintTop_toBottomOf="@id/button"
         app:layout_constraintStart_toStartOf="@id/guideline1"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
-    />
+        />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline1"
@@ -97,4 +119,5 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.75"
         />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
