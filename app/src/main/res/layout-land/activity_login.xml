@@ -12,7 +12,7 @@
         android:id="@+id/logo"
         android:layout_width="90dp"
         android:layout_height="90dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="15dp"
         android:src="@drawable/shark_bite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +23,7 @@
         android:id="@+id/til1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="15dp"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         app:layout_constraintTop_toBottomOf="@id/logo"
@@ -71,9 +71,11 @@
         app:layout_constraintTop_toBottomOf="@id/til2"
         app:layout_constraintEnd_toStartOf="@id/buttoninverse"
         app:layout_constraintStart_toStartOf="@id/guideline1"
+        android:layout_marginHorizontal="3dp"
         />
 
     <Button
+        android:layout_marginTop="5dp"
         android:id="@+id/buttoninverse"
         style="@style/buttonoutlined"
         android:onClick="openSignup"
@@ -81,6 +83,8 @@
         app:layout_constraintTop_toBottomOf="@id/til2"
         app:layout_constraintStart_toEndOf="@id/button"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
+        android:layout_marginHorizontal="3dp"
+
     />
 
     <androidx.constraintlayout.widget.Guideline
