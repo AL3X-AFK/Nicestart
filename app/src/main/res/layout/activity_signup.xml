@@ -8,6 +8,19 @@
     tools:context=".Signup"
     android:background="@drawable/gradient">
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@android:color/transparent"
+        app:title="@string/app_name"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/ic_arrow_back_24"
+        android:elevation="0dp"
+        tools:ignore="MissingConstraints"
+        />
+
+
     <ImageView
         android:id="@+id/logo"
         android:layout_width="90dp"
