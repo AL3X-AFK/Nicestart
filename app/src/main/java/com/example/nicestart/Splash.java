@@ -3,6 +3,8 @@ package com.example.nicestart;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.widget.ImageView;
+import com.bumptech.glide.Glide;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,6 +23,16 @@ public class Splash extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
         openApp();
+
+        ImageView mSea = findViewById(R.id.backView);
+
+        Glide.with(this)
+                .load("https://cdn.pixabay.com/photo/2021/09/09/05/24/koi-6609501_1280.jpg")
+//                .transition(DrawableTransitionOptions.withCrossFade(100))
+//                .diskCacheStrategy(DiskCacheStrategy.ALL)
+//                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.teal_200)))
+//                .circleCrop()
+                .into(mSea);
     }
 
     public void openApp(){

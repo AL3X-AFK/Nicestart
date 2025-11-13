@@ -3,4 +3,6 @@
     <string name="login">LOGIN</string>
     <string name="signup">SIGNUP</string>
     <string name="cancel">CANCEL</string>
+
+    <string name="name">Nombre</string>
 </resources>
