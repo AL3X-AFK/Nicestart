@@ -26,16 +26,24 @@ Está diseñada como un proyecto de práctica y demostración de diseño de UI/U
 Actividad de que se meustra al abrir la aplicacion por un lapso de 5 segundos.
 - Logo con animacion
 - Texto con fuente personalizada
-![Splash_activity](img/splash_gif.gif)
+<br>
+
+<p align="center">
+  <img src="img/splash_gif.gif" alt="Splash_activity" />
+</p>
 
 
 **Login Activity**  
-![login_activity](img/login.png)
+<p align="center">
+  <img src="img/login.png" alt="login_activity" />
+</p>
 
 <br>
 
 **Signup Activity**  
-![signup_activity](img/signup.png)
+<p align="center">
+  <img src="img/signup.png" alt="signup_activity" />
+</p>
 
 <br>
 
