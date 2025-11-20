@@ -21,7 +21,12 @@ Está diseñada como un proyecto de práctica y demostración de diseño de UI/U
 - **Lenguaje:** Kotlin
 <br>
 
-## Capturas de pantalla
+## Funciones de la Aplicación
+**Splash Activity**
+Actividad de que se meustra al abrir la aplicacion por un lapso de 5 segundos.
+- Logo con animacion
+- Texto con fuente personalizada
+![login_activity](img/splash.png)
 
 **Login Activity**  
 ![login_activity](img/login.png)
