@@ -9,6 +9,7 @@
     tools:context=".Splash">
 
 
+
     <ImageView
         android:id="@+id/backView"
         android:layout_width="match_parent"
@@ -17,6 +18,10 @@
         app:layout_constraintTop_toTopOf="parent"
         android:scaleType="centerCrop"/>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#B2012626" />
 
     <ImageView
         android:id="@+id/icon"
