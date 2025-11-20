@@ -27,7 +27,7 @@ public class Login extends AppCompatActivity {
         ImageView mSea = findViewById(R.id.backView);
 
         Glide.with(this)
-                .load("https://cdn.pixabay.com/photo/2019/03/29/13/27/depth-4089223_1280.jpg")
+                .load("https://cdn.pixabay.com/photo/2022/07/14/05/56/jellyfish-7320516_1280.jpg")
                 .centerCrop()
                 .transition(DrawableTransitionOptions.withCrossFade(1000))
                 .into(mSea);

@@ -37,7 +37,7 @@ public class Signup extends AppCompatActivity {
         ImageView mSea = findViewById(R.id.backView);
 
         Glide.with(this)
-                .load("https://cdn.pixabay.com/photo/2013/11/27/06/16/geomdan-mountain-219139_1280.jpg")
+                .load("https://cdn.pixabay.com/photo/2019/11/21/08/32/bright-4642061_1280.jpg")
                 .centerCrop()
                 .placeholder(R.drawable.gradient)
                 .into(mSea);
