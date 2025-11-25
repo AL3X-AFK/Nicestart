@@ -23,15 +23,27 @@
         android:layout_height="match_parent"
         android:backgroundTint="#B2012626" />
 
-    <ImageView
-        android:id="@+id/icon"
-        android:layout_width="170dp"
-        android:layout_height="170dp"
-        android:layout_marginTop="30dp"
-        android:src="@drawable/shark_bite"
-        app:layout_constraintEnd_toEndOf="parent"
+<!--    <ImageView-->
+<!--        android:id="@+id/icon"-->
+<!--        android:layout_width="170dp"-->
+<!--        android:layout_height="170dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:src="@drawable/shark_bite"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/font"  />-->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        app:lottie_autoPlay="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/font"  />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/shark"
+        />
 
     <TextView
         android:id="@+id/font"
@@ -44,7 +56,7 @@
         android:textColor="@android:color/white"
         android:textSize="40sp"
 
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="350dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

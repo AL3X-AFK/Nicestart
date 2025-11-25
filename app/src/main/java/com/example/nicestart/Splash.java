@@ -26,10 +26,10 @@ public class Splash extends AppCompatActivity {
 
         setContentView(R.layout.activity_splash);
 
-        ImageView icon = findViewById(R.id.icon);
+//        ImageView icon = findViewById(R.id.icon);
 
-        Animation myAnim = AnimationUtils.loadAnimation(this, R.anim.transformx2);
-        icon.startAnimation(myAnim);
+//        Animation myAnim = AnimationUtils.loadAnimation(this, R.anim.transformx2);
+//        icon.startAnimation(myAnim);
 
         openApp();
 
@@ -37,7 +37,7 @@ public class Splash extends AppCompatActivity {
         ImageView mSea = findViewById(R.id.backView);
 
         Glide.with(this)
-                .load("https://images.unsplash.com/photo-1535643676813-925e1853beff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGRlZXAlMjBzZWF8ZW58MHx8MHx8fDA%3D")
+                .load("https://images.pexels.com/photos/63340/pexels-photo-63340.jpeg")
 //                .transition(DrawableTransitionOptions.withCrossFade(100))
 //                .diskCacheStrategy(DiskCacheStrategy.ALL)
 //                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.teal_200)))
