@@ -33,7 +33,7 @@ public class Splash extends AppCompatActivity {
 
         openApp();
 
-
+//Buscar la imageview en el layout
         ImageView mSea = findViewById(R.id.backView);
 
         Glide.with(this)
@@ -44,6 +44,7 @@ public class Splash extends AppCompatActivity {
                 .into(mSea);
     }
 
+    // Funcion para esperar 5000 ms y pasar a l login
     public void openApp(){
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {

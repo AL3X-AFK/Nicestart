@@ -22,6 +22,7 @@ public class Signup extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_signup);
 
+        //Busca el toolbar
         MaterialToolbar toolbar = findViewById(R.id.topAppBar);
 
         //Establece la Toolbar como ActionBar

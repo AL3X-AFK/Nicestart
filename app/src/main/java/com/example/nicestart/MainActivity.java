@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         swipeLayout = findViewById(R.id.myswipe);
+        //Registra un listener para detectar cuando el usuario arrastra hacia abajo para refrescar
         swipeLayout.setOnRefreshListener(mOnRefreshListener);
 
     }
@@ -52,8 +53,9 @@ public class MainActivity extends AppCompatActivity {
 //            Toast toast0 = Toast.makeText(MainActivity.this, "Hi there! I don't exist :)", Toast.LENGTH_LONG);
 //            toast0.show();
 //
+             //Detiene el efecto de recarga
             swipeLayout.setRefreshing(false);
-
+            //Encontrar el layout principal
             ConstraintLayout mLayout = findViewById(R.id.myMainConstrain);
 
             Snackbar snackbar = Snackbar
@@ -75,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
     //Creacion del context menu
     //Implementing Context Menu
+    // Esto carga menu_context.xml y lo usa como menú emergente para ese TextView.
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v,
                                     ContextMenu.ContextMenuInfo menuInfo){
@@ -99,13 +102,11 @@ public class MainActivity extends AppCompatActivity {
 
 
     //Implementing Menu AppBar
+    // Esto carga un menú en la barra superior
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_appbar, menu);
         return true;
     }
-
-
-
 }
