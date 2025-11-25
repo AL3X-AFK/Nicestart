@@ -27,26 +27,28 @@
         android:id="@+id/icon"
         android:layout_width="170dp"
         android:layout_height="170dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="30dp"
         android:src="@drawable/shark_bite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/font"  />
 
     <TextView
         android:id="@+id/font"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:background="@android:color/transparent"
         android:fontFamily="@font/fuente3"
         android:text="@string/app_name"
         android:textAllCaps="true"
         android:textColor="@android:color/white"
         android:textSize="40sp"
+
+        android:layout_marginTop="250dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/icon" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

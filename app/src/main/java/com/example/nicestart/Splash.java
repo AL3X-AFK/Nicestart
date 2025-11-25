@@ -37,7 +37,7 @@ public class Splash extends AppCompatActivity {
         ImageView mSea = findViewById(R.id.backView);
 
         Glide.with(this)
-                .load("https://cdn.pixabay.com/photo/2016/11/29/05/25/sharks-1867523_1280.jpg")
+                .load("https://images.unsplash.com/photo-1535643676813-925e1853beff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGRlZXAlMjBzZWF8ZW58MHx8MHx8fDA%3D")
 //                .transition(DrawableTransitionOptions.withCrossFade(100))
 //                .diskCacheStrategy(DiskCacheStrategy.ALL)
 //                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.teal_200)))

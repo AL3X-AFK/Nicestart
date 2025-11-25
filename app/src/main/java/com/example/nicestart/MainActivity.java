@@ -30,9 +30,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+        // Agrega el context menu al text view
         TextView mycontext = findViewById(R.id.mycontext);
         registerForContextMenu(mycontext);
-
 
 
 
@@ -73,7 +73,8 @@ public class MainActivity extends AppCompatActivity {
     };
 
 
-    //Implementing Contect Menu
+    //Creacion del context menu
+    //Implementing Context Menu
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v,
                                     ContextMenu.ContextMenuInfo menuInfo){
@@ -95,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
         }
         return false;
     }
+
 
     //Implementing Menu AppBar
     @Override
