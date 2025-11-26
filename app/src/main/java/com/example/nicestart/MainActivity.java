@@ -18,6 +18,8 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.google.android.material.snackbar.Snackbar;
+import com.shashank.sony.fancytoastlib.FancyToast;
+import com.tapadoo.alerter.Alerter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -89,13 +91,22 @@ public class MainActivity extends AppCompatActivity {
 //        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo)
 //                item.getMenuInfo();
         if (item.getItemId() == R.id.item1) {
-            Toast toast = Toast.makeText(this, "Item copied",
-                    Toast.LENGTH_LONG);
+            //Creacion de toast con Fancy
+            //DEFAULT/SUCCESS/INFO/WARNING/ERROR/CONFUSING
+            Toast toast = FancyToast.makeText(this,"Item copied!", FancyToast.LENGTH_LONG, FancyToast.SUCCESS, true);
+//            Toast toast = Toast.makeText(this, "Item copied", Toast.LENGTH_LONG);
             toast.show();
+
         } else if (item.getItemId() == R.id.item2) {
-            Toast toast2 = Toast.makeText(this, "Downloading item...",
-                    Toast.LENGTH_LONG);
+            //Toast sin icono de android
+            Toast toast2 = FancyToast.makeText(this,"Downloading item...", FancyToast.LENGTH_LONG, FancyToast.WARNING, false);
             toast2.show();
+            //Creacion de alerta
+            Alerter.create(this).
+                    setTitle("Downloading").
+                    setText("Image.png").
+                    setBackgroundColorRes(R.color.g3).
+                    show();
         }
         return false;
     }

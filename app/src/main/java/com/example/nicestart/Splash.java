@@ -7,6 +7,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import com.bumptech.glide.Glide;
+import com.facebook.shimmer.ShimmerFrameLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +18,9 @@ import androidx.core.view.WindowInsetsCompat;
 import java.util.logging.Logger;
 
 public class Splash extends AppCompatActivity {
+
+//Uso del shimmer
+    private ShimmerFrameLayout shimmerText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +46,10 @@ public class Splash extends AppCompatActivity {
 //                .diskCacheStrategy(DiskCacheStrategy.ALL)
 //                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.teal_200)))
                 .into(mSea);
+
+
+        //Implementar shimmer
+        shimmerText = findViewById(R.id.shimmerLayout);
     }
 
     // Funcion para esperar 5000 ms y pasar a l login
