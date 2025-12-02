@@ -10,7 +10,7 @@
     <item
         android:id="@+id/item1"
         android:title="Copy"
-        android:icon="@drawable/key"
+        android:icon="@drawable/settings_svgrepo_com"
         app:showAsAction="ifRoom">
 
         <menu>
