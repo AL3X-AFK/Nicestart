@@ -1,5 +1,6 @@
 package com.example.nicestart;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 
@@ -10,6 +11,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.bumptech.glide.Glide;
+import com.google.android.material.appbar.MaterialToolbar;
 
 public class ProfileActivity extends AppCompatActivity {
 
@@ -17,7 +19,21 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
+
+
         setContentView(R.layout.activity_profile);
+
+        //Busca el toolbar
+        MaterialToolbar toolbar = findViewById(R.id.topAppBar);
+
+        //Establece la Toolbar como ActionBar
+        setSupportActionBar(toolbar);
+
+        //Define la acción de la flecha
+        toolbar.setNavigationOnClickListener(v -> {
+            Intent intent = new Intent(ProfileActivity.this, MainActivity.class);
+            startActivity(intent);
+        });
 
         ImageView imProfile = findViewById(R.id.ivProfile);
 

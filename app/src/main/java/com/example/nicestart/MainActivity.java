@@ -1,22 +1,30 @@
 package com.example.nicestart;
 
+import android.annotation.SuppressLint;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
 import com.shashank.sony.fancytoastlib.FancyToast;
 import com.tapadoo.alerter.Alerter;
@@ -120,4 +128,72 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_appbar, menu);
         return true;
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        int id = item.getItemId();
+
+        if(id == R.id.item5){
+            showAlertDialogButtonClicked(MainActivity.this);
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+
+    // DIALOGO MODAL
+    @SuppressLint("ResourceAsColor")
+    public void showAlertDialogButtonClicked(MainActivity mainActivity) {
+        // setup the alert builder
+        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(this);
+
+        //el dialogo estandar tiene título/icono pero podemos sustituirlo por un XML a medida
+//        builder.setTitle("Achtung!");
+//        builder.setMessage("Where do you go?");
+//        builder.setIcon(R.drawable.usericon);
+//        builder.setCancelable(true);
+
+        // un XML a medida para el diálogo
+        builder.setView(getLayoutInflater().inflate(R.layout.alertdialog, null));
+
+
+
+        // add the buttons
+        builder.setPositiveButton("Profile", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+                startActivity(intent);
+//                dialog.dismiss();
+            }
+        });
+//
+        builder.setNegativeButton("Do nothing", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+//                dialog.dismiss();
+            }
+        });
+
+        builder.setNeutralButton("Exit", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                System.exit(0);
+//                dialog.dismiss();
+            }
+        });
+
+        // create and show the alert dialog
+        AlertDialog dialog = builder.create();
+        dialog.show();
+
+        //Color al texto de los botones
+        Button positive = dialog.getButton(AlertDialog.BUTTON_POSITIVE);
+        Button negative = dialog.getButton(AlertDialog.BUTTON_NEGATIVE);
+        Button neutral = dialog.getButton(AlertDialog.BUTTON_NEUTRAL);
+
+        positive.setTextColor(ContextCompat.getColor(this, R.color.g4));
+        negative.setTextColor(ContextCompat.getColor(this, R.color.g4));
+        neutral.setTextColor(ContextCompat.getColor(this, R.color.red));
+    }
+
 }

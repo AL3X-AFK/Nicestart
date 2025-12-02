@@ -27,7 +27,7 @@
 
             <item
                 android:id="@+id/item5"
-                android:title="Signout"
+                android:title="Account"
                 app:showAsAction="never"/>
 
         </menu>
