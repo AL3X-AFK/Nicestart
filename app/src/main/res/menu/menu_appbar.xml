@@ -16,7 +16,7 @@
         <menu>
             <item
                 android:id="@+id/item3"
-                android:title="Bottom app bar"
+                android:title="Show Alert"
                 app:showAsAction="never" />
 
             <item
@@ -27,7 +27,7 @@
 
             <item
                 android:id="@+id/item5"
-                android:title="Account"
+                android:title="Dialog Alert"
                 app:showAsAction="never"/>
 
         </menu>

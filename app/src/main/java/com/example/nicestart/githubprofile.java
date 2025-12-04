@@ -23,18 +23,6 @@ public class githubprofile extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_githubprofile);
 
-        //Busca el toolbar
-        MaterialToolbar toolbar = findViewById(R.id.topAppBar);
-
-        //Establece la Toolbar como ActionBar
-        setSupportActionBar(toolbar);
-
-        //Define la acción de la flecha
-        toolbar.setNavigationOnClickListener(v -> {
-            Intent intent = new Intent(githubprofile.this, MainActivity.class);
-            startActivity(intent);
-        });
-
 
         miVisorWeb = findViewById(R.id.vistaweb);
 

@@ -22,6 +22,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
 import com.shashank.sony.fancytoastlib.FancyToast;
+import com.tapadoo.alerter.Alerter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -120,12 +121,7 @@ public class MainActivity extends AppCompatActivity {
             //Toast sin icono de android
             Toast toast2 = FancyToast.makeText(this,"Downloading item...", FancyToast.LENGTH_LONG, FancyToast.INFO, false);
             toast2.show();
-            //Creacion de alerta
-//            Alerter.create(this).
-//                    setTitle("Downloading").
-//                    setText("Image.png").
-//                    setBackgroundColorRes(R.color.g3).
-//                    show();
+
         }
         return false;
     }
@@ -143,7 +139,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
-
+        if(id == R.id.item3){
+//            Creacion de alerta
+            Alerter.create(this).
+                    setTitle("Downloading").
+                    setText("Image.png").
+                    setBackgroundColorRes(R.color.g3).
+                    show();
+        }
         if(id == R.id.item4){
             Intent intent = new Intent(MainActivity.this, githubprofile.class);
             startActivity(intent);

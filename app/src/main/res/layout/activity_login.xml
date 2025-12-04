@@ -8,12 +8,21 @@
     android:background="@drawable/gradient"
     tools:context=".Login">
 
-    <ImageView
-        android:id="@+id/backView"
+    <VideoView
+        android:id="@+id/backgroundVideo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:layout_marginBottom="-80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:ignore="MissingConstraints" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/backView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"/>-->
 
     <View
         android:layout_width="match_parent"

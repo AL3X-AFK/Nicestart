@@ -1,9 +1,12 @@
 package com.example.nicestart;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.VideoView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,26 +25,25 @@ public class Signup extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_signup);
 
-        //Busca el toolbar
-        MaterialToolbar toolbar = findViewById(R.id.topAppBar);
+        VideoView backgroundVideo = findViewById(R.id.backgroundVideo);
 
-        //Establece la Toolbar como ActionBar
-        setSupportActionBar(toolbar);
+        String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.video_fondo;
+        Uri videoUri = Uri.parse(videoPath);
+        backgroundVideo.setVideoURI(videoUri);
 
-        //Define la acción de la flecha
-        toolbar.setNavigationOnClickListener(v -> {
-            Intent intent = new Intent(Signup.this, Login.class);
-            startActivity(intent);
+        backgroundVideo.setOnPreparedListener(mp -> {
+            mp.setLooping(true);     // Bucle infinito
+            mp.setVolume(0f, 0f);    // Sin sonido
         });
 
-
-        ImageView mSea = findViewById(R.id.backView);
-
-        Glide.with(this)
-                .load("https://cdn.pixabay.com/photo/2019/11/21/08/32/bright-4642061_1280.jpg")
-                .centerCrop()
-                .placeholder(R.drawable.gradient)
-                .into(mSea);
+//        backgroundVideo.start();
+//        ImageView mSea = findViewById(R.id.backView);
+//
+//        Glide.with(this)
+//                .load("https://cdn.pixabay.com/photo/2019/11/21/08/32/bright-4642061_1280.jpg")
+//                .centerCrop()
+//                .placeholder(R.drawable.gradient)
+//                .into(mSea);
 
     }
 
