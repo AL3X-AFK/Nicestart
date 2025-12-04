@@ -14,10 +14,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Nicestart.NoActionBar">
         <activity
+            android:name=".githubprofile"
+            android:exported="false" />
+        <activity
             android:name=".ProfileActivity"
-            android:exported="true">
-        </activity>
-
+            android:exported="true"></activity>
         <activity
             android:name=".Splash"
             android:exported="true">
@@ -30,14 +31,14 @@
         <activity
             android:name=".Signup"
             android:exported="false"
-            android:parentActivityName=".Login" />
+            android:parentActivityName=".Login"/>
         <activity
             android:name=".Login"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.Nicestart.ActionBar"/>
+            android:theme="@style/Theme.Nicestart.ActionBar" />
     </application>
 
 </manifest>

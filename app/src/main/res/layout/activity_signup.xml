@@ -8,6 +8,20 @@
     tools:context=".Signup"
     android:background="@drawable/gradient">
 
+
+
+    <ImageView
+        android:id="@+id/backView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#63000000"/>
+
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/topAppBar"
         android:layout_width="match_parent"
@@ -19,14 +33,6 @@
         android:elevation="0dp"
         tools:ignore="MissingConstraints"
         />
-
-    <ImageView
-        android:id="@+id/backView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
 
     <ImageView
         android:id="@+id/logo"

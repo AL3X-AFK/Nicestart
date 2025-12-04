@@ -15,6 +15,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#890B3140"/>
 
     <ImageView
         android:id="@+id/logo"
@@ -37,9 +41,10 @@
         app:layout_constraintTop_toBottomOf="@id/logo"
         app:startIconDrawable="@drawable/usericon"
         android:hint="Username"
+        app:hintTextColor="@color/black"
         >
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:alpha="0.7"
@@ -58,9 +63,11 @@
         app:layout_constraintTop_toBottomOf="@id/til1"
         app:passwordToggleEnabled="true"
         app:startIconDrawable="@drawable/key"
+        app:hintTextColor="@color/black"
+
         >
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:alpha="0.7"

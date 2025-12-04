@@ -8,7 +8,8 @@
     <style name="Theme.Nicestart.ActionBar" parent="Theme.Material3.DayNight">
         <item name="colorPrimary">@color/g1</item>
         <item name="colorOnPrimary">@color/white</item>
-        <item name="actionBarStyle">@style/TransparentActionBar</item>
+        <item name="background">@android:color/transparent</item>
+        <item name="android:elevation">0dp</item>
     </style>
 
     <style name="TransparentActionBar" parent="Widget.AppCompat.ActionBar">
