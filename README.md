@@ -6,8 +6,7 @@ Se trata de un proyecto orientado al aprendizaje, que implementa principios actu
 <p align="center">
   <img src="img/icon.png" alt="NiseStart Logo" width="180">
 </p>
-
----
+<br>
 
 ## 🚀 **Características principales**
 - Pantallas completas de **Splash**, **Login**, **Registro**, **Main**  y **Profile**
@@ -15,13 +14,11 @@ Se trata de un proyecto orientado al aprendizaje, que implementa principios actu
 - Navegación intuitiva con enfoque en la experiencia de usuario  
 - Código limpio, organizado y comentado  
 - Uso de menús contextuales, App Bar y Swipe Refresh  
-
----
+<br>
 
 ## 🧰 **Tecnologías utilizadas**
 - **Lenguaje:** Kotlin 
-
----
+<br>
 
 # 📱 **Funciones de la Aplicación**
 
@@ -33,11 +30,10 @@ Incluye:
 - Fuente personalizada  
 - Transición suave hacia Login  
 
-<p align="center">
-  <img src="img/splash_gif.gif" alt="Splash_activity" />
-</p>
 
----
+  <img src="img/splash_gif.gif" alt="Splash_activity" />
+
+
 
 ## **2) Login Activity**
 Pantalla para iniciar sesión.
@@ -47,11 +43,10 @@ Características:
 - Diseño minimalista y accesible  
 - Validación básica de campos  
 
-<p align="center">
-  <img src="img/login.png" alt="login_activity" />
-</p>
 
----
+  <img src="img/login.png" alt="login_activity" />
+
+
 
 ## **3) Signup Activity**
 Pantalla para que nuevos usuarios se registren.
@@ -61,62 +56,13 @@ Incluye:
 - Estética coherente con Login  
 - Campos organizados y bien espaciados  
 
-<p align="center">
   <img src="img/signup.png" alt="signup_activity" />
-</p>
 
----
+
 
 ## **4) Main Activity**
 Pantalla principal donde se agrupan utilidades, menús, elementos visuales y ejemplos de interacción.
-
----
-
-## 📝 **Menú Contextual**
-Aplicado sobre el `TextView` central. Ofrece:
-
-- **Copy**  
-- **Download**
-
-<p align="center">
-  <img src="img/1.png" alt="context_menu" />
-</p>
-
----
-
-## 📂 **Menú de la App Bar**
-Incluye opciones rápidas y un submenú:
-
-- **Settings**
-- **Copy**
-  - Bottom app bar  
-  - Bottom navigation  
-  - Account  
-
-El menú se define en `menu.xml` usando `showAsAction` para indicar qué íconos se muestran en la barra.
-
-<p align="center">
-  <img src="img/2.png" alt="appbar" />
-  <img src="img/3.png" alt="appbar" />
-</p>
-
-### 🔔 **Alert Dialog (Account)**
-Al seleccionar **Account**, se muestra un cuadro de diálogo con opciones como:
-- Ir a **ProfileActivity**
-- Salir de la aplicación
-
-<p align="center">
-  <img src="img/alertDialog.png" alt="alert" />
-</p>
-
-<p align="center">
-  <img src="img/profile.png" alt="profile" />
-</p>
-
----
-
-## 🔄 **Swipe Refresh**
-El contenido puede actualizarse deslizando hacia abajo.
+Cuenta con una función se refesh que al refrescar cambia de imagen.
 
 Proceso:
 1. Se activa el `OnRefreshListener`  
@@ -124,11 +70,37 @@ Proceso:
 3. Se muestra un **Snackbar** informativo  
 4. El botón **UNDO** muestra un segundo Snackbar  
 
-<p align="center">
-  <img src="img/main_refresh.png" alt="refresh" />
-</p>
+| Imagen 1 | Imagen 2 | Imagen 3 |
+|---------|----------|----------|
+| <img src="img/main1.png" alt="login_activity" width="200"/> | <img src="img/main2.png" alt="login_activity" width="200"/> | <img src="img/main3.png" alt="login_activity" width="200"/> |
 
----
+
+
+### **Menú Contextual**
+Aplicado sobre el refresh central. Al mantener pulsado ofrece las opciones de copy y download
+
+  <img src="img/menu_context.png" alt="context_menu" />
+
+
+
+### **Menú de la App Bar**
+Incluye opciones rápidas y un submenú:
+
+- **Settings**
+- **Copy**
+  - Bottom app bar  
+  - Bottom navigation  
+  - Account
+  <img src="img/menu_appbar.png" alt="context_menu" />
+    
+| Show Alert | Github Profile | Dialog Alert |
+|---------|----------|----------|
+| <img src="img/showAlert.png" alt="login_activity" width="200"/> | <img src="img/githubProfile.png" alt="login_activity" width="200"/> | <img src="img/dialogAlert.png" alt="login_activity" width="200"/> |
+| Muestra una alert que aparece desde arriba de la pantalla con una leve animación | Abre un activity donde se puede ver mi perfil de Github | Abre un Dialog Alert que ofrece 3 opciones al usuaario|
+
+
+
+
 
 ## 📄 Licencia
 >This repository is licensed under  
