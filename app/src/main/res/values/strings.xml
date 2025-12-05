@@ -12,4 +12,8 @@
     <string name="follow">Seguir</string>
     <string name="desc">Mitad serio, mitad meme. Experto en procrastinar y descubrir series nuevas. Si hay pizza, hay plan.
 </string>
+    <string name="perfil">Perfil</string>
+    <string name="contentdescription">contentdescription</string>
+    <string name="dialog_message">Where do you go?</string>
+    <string name="achtung">Achtung!</string>
 </resources>
