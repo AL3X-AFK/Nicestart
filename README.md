@@ -118,6 +118,41 @@ miVisorWeb.loadUrl("https://github.com/AL3X-AFK");
 ```
 <br>
 
+### 🌐 **Pull request enviado**
+
+He realizado algunos ajustes en la interfaz de usuario para mejorar la legibilidad y la estética de las pantallas de **Login** y **Signup**:
+
+- El color del **hintText** de los `EditText` en ambas actividades no resultaba visualmente agradable, por lo que se ajustó su tonalidad.
+- Se modificaron las **letras de los botones** de Login (en `LoginActivity`) y Signup (en `SignupActivity`) para mejorar su visibilidad.
+- Los botones **Signup** (en `LoginActivity`) y **Cancel** (en `SignupActivity`) no contaban con un fondo, dificultando su lectura.  
+  Ahora cuentan con un **background con transparencia**, lo que mejora el contraste y la visibilidad.
+- Todos los colores utilizados provienen de la paleta definida en **`colors.xml`**, garantizando consistencia con la identidad visual de la aplicación.
+
+#### 📌 Fragmentos de código utilizados
+
+```
+style="@style/buttoninline"
+android:textColor="@color/purple_700"
+
+app:startIconDrawable="@drawable/keyicon"
+app:hintTextColor="@color/purple_700"
+```
+<br>
+
+
+
+### 🌐 **Pull request recibido**
+He recibido un pull request donde se recomienda extraer textos escritos directamente en los archivos XML y almacenarlos en strings.xml, siguiendo buenas prácticas de mantenibilidad y localización.
+
+#### 📌 Strings sugeridos en el pull request recibido
+```
+<string name="perfil">Perfil</string>
+<string name="contentdescription">contentdescription</string>
+<string name="dialog_message">Where do you go?</string>
+<string name="achtung">Achtung!</string>
+```
+<br>
+
 ## 📄 **Licencia**
 
 > This repository is licensed under  
