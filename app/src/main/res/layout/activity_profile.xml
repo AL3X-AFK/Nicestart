@@ -36,7 +36,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Perfil"
+            android:text="@string/perfil"
             android:layout_marginTop="32dp"
             android:textSize="35sp"
             android:textColor="@color/black"
@@ -54,7 +54,8 @@
         <ImageView
             android:id="@+id/ivProfile"
             android:layout_width="150dp"
-            android:layout_height="150dp"/>
+            android:layout_height="150dp"
+            android:contentDescription="@string/contentdescription" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -84,10 +85,10 @@
             />
         <Button
             android:layout_marginTop="32dp"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/follow"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:backgroundTint="@color/g3"/>
 
     </LinearLayout>

@@ -36,7 +36,8 @@ public class Signup extends AppCompatActivity {
             mp.setVolume(0f, 0f);    // Sin sonido
         });
 
-//        backgroundVideo.start();
+        backgroundVideo.start();
+
 //        ImageView mSea = findViewById(R.id.backView);
 //
 //        Glide.with(this)
