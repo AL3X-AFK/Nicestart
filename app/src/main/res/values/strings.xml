@@ -1,15 +1,15 @@
 <resources>
-    <string name="app_name">Nicestart</string>
-    <string name="login">LOGIN</string>
-    <string name="signup">SIGNUP</string>
-    <string name="cancel">CANCEL</string>
+    <string name="app_name" translatable="false">Nicestart</string>
+    <string name="login">Logearse</string>
+    <string name="signup">Registrarse</string>
+    <string name="cancel">Cancelar</string>
 
     <string name="name">Nombre</string>
-    <string name="name_example">Alberto Martin</string>
-    <string name="age">25 años</string>
-    <string name="numberPhone">68989541</string>
-    <string name="email">alb@martin.com</string>
+    <string name="name_example" translatable="false">Alberto Martin</string>
+    <string name="age" translatable="false">25 años</string>
+    <string name="numberPhone" translatable="false">68989541</string>
+    <string name="email" translatable="false">alb@martin.com</string>
     <string name="follow">Seguir</string>
-    <string name="desc">Mitad serio, mitad meme. Experto en procrastinar y descubrir series nuevas. Si hay pizza, hay plan.
+    <string name="desc" translatable="false">Mitad serio, mitad meme. Experto en procrastinar y descubrir series nuevas. Si hay pizza, hay plan.
 </string>
 </resources>
