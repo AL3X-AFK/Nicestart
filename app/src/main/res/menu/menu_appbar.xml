@@ -11,6 +11,7 @@
         android:id="@+id/item1"
         android:title="Copy"
         android:icon="@drawable/settings_svgrepo_com"
+        android:iconTint="@color/white"
         app:showAsAction="ifRoom">
 
         <menu>

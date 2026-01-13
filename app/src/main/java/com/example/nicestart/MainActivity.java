@@ -209,8 +209,8 @@ public class MainActivity extends AppCompatActivity {
         Button negative = dialog.getButton(AlertDialog.BUTTON_NEGATIVE);
         Button neutral = dialog.getButton(AlertDialog.BUTTON_NEUTRAL);
 
-        positive.setTextColor(ContextCompat.getColor(this, R.color.g4));
-        negative.setTextColor(ContextCompat.getColor(this, R.color.g4));
+        positive.setTextColor(ContextCompat.getColor(this, R.color.white));
+        negative.setTextColor(ContextCompat.getColor(this, R.color.white));
         neutral.setTextColor(ContextCompat.getColor(this, R.color.red));
     }
 
