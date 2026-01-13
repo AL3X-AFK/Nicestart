@@ -8,7 +8,7 @@ Es un proyecto orientado al aprendizaje que implementa principios actuales de **
 </p>
 <br>
 
-## 🚀 **Características principales**
+## **Características principales**
 - Pantallas completas de **Splash**, **Login**, **Registro**, **Main** y **Profile**  
 - Interfaz basada en **Material Design**  
 - Navegación intuitiva con enfoque en la experiencia de usuario  
@@ -16,14 +16,14 @@ Es un proyecto orientado al aprendizaje que implementa principios actuales de **
 - Uso de menús contextuales, App Bar y Swipe Refresh  
 <br>
 
-## 🧰 **Tecnologías utilizadas**
+## **Tecnologías utilizadas**
 - **Lenguaje:** Kotlin  
 <br>
 
 # 📱 **Funciones de la Aplicación**
 
 
-## 🔹 **1) Splash Activity**
+## **1) Splash Activity**
 Pantalla inicial que aparece durante 5 segundos.
 
 Incluye:
@@ -36,7 +36,7 @@ Incluye:
 
 <br>
 
-## 🔹 **2) Login Activity**
+## **2) Login Activity**
 Pantalla para iniciar sesión.
 
 Características:
@@ -49,7 +49,7 @@ Características:
 
 <br>
 
-## 🔹 **3) Signup Activity**
+## **3) Signup Activity**
 Pantalla para que nuevos usuarios se registren.
 
 Incluye:
@@ -62,7 +62,7 @@ Incluye:
 
 <br>
 
-## 🔹 **4) Main Activity**
+## **4) Main Activity**
 Pantalla principal donde se agrupan utilidades, menús, elementos visuales y ejemplos de interacción.  
 Cuenta con una función de *refresh* que al actualizar cambia la imagen.
 
@@ -98,18 +98,17 @@ Incluye opciones rápidas y un submenú:
 
   <img src="img/menu_appbar.png" alt="appbar_menu" width="300"/>
 
-
-### Funciones adicionales
+## **5) Funciones Adicionales**
 
 | Show Alert | Github Profile | Dialog Alert |
 |------------|----------------|--------------|
 | <p align="center"><img src="img/showAlert.png" width="200"/></p> | <p align="center"><img src="img/githubProfile.png" width="200"/></p> | <p align="center"><img src="img/dialogAlert.png" width="200"/></p> |
 | Muestra una alerta con animación desde arriba | Abre un activity que muestra mi perfil de GitHub | Muestra un Dialog con 3 opciones para el usuario:<br>- Salir de la aplicación<br>- No hacer nada<br>- Ir al Profile Activity |
 
-Utilizo un **WebView** para mostrar directamente la página de mi perfil de GitHub dentro del activity, permitiendo una integración limpia y fluida sin necesidad de abrir un navegador externo.
-
 Inlcuyo en Values las opciones para lenguajes en Ingles y Español
 <p><img src="img/languages1.png" width="500"/></p>
+
+Utilizo un **WebView** para mostrar directamente la página de mi perfil de GitHub dentro del activity, permitiendo una integración limpia y fluida sin necesidad de abrir un navegador externo.
 
 ```kotlin
 WebView miVisorWeb;
@@ -119,6 +118,15 @@ miVisorWeb = findViewById(R.id.vistaweb);
 miVisorWeb.getSettings().setJavaScriptEnabled(true);
 miVisorWeb.loadUrl("https://github.com/AL3X-AFK");
 ```
+<br>
+
+### 🌒 Modo oscuro
+Creando en Values/Colors un nuevo archivo colors.xml estan los colores personalizados para el modo oscuro.
+| Modo Oscuro | Modo Claro |
+|------------|----------------|
+| <p align="center"><img src="img/loginDark.png" width="200"/></p> | <p align="center"><img src="img/login.png" width="200"/></p> |
+| <p align="center"><img src="img/mainDark.png" width="200"/></p> | <p align="center"><img src="img/main2.png" width="200"/></p> |
+
 <br>
 
 ### 🌐 **Pull request enviado**
