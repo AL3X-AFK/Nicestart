@@ -108,6 +108,8 @@ Incluye opciones rápidas y un submenú:
 
 Utilizo un **WebView** para mostrar directamente la página de mi perfil de GitHub dentro del activity, permitiendo una integración limpia y fluida sin necesidad de abrir un navegador externo.
 
+Inlcuyo en Values las opciones para lenguajes en Ingles y Español
+<p><img src="img/languages1.png" width="500"/></p>
 ```kotlin
 WebView miVisorWeb;
 
