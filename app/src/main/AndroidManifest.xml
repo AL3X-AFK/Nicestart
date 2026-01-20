@@ -14,27 +14,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Nicestart.NoActionBar">
         <activity
-            android:name=".githubprofile"
-            android:exported="false"
-            android:theme="@style/Theme.Nicestart.ActionBar"
-            android:parentActivityName=".MainActivity"/>
-        <activity
-            android:name=".ProfileActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".Splash"
-            android:exported="true">
+            android:name=".MainBab"
+            android:exported="true"
+            android:theme="@style/Theme.Nicestart.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".githubprofile"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.Nicestart.ActionBar" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Splash"
+            android:exported="false">
+
         </activity>
         <activity
             android:name=".Signup"
             android:exported="false"
-            android:theme="@style/Theme.Nicestart.ActionBar"
-            android:parentActivityName=".Login"/>
+            android:parentActivityName=".Login"
+            android:theme="@style/Theme.Nicestart.ActionBar" />
         <activity
             android:name=".Login"
             android:exported="true" />
