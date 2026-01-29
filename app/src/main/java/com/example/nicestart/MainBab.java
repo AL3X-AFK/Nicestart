@@ -1,5 +1,6 @@
 package com.example.nicestart;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -109,6 +110,8 @@ public class MainBab extends AppCompatActivity {
                 Toast toast2 = FancyToast.makeText(MainBab.this,"Logout clicked", FancyToast.LENGTH_LONG, FancyToast.WARNING, false);
                 toast2.show();
                 bottomSheetDialog.dismiss();
+                Intent intent = new Intent(MainBab.this, MainActivity.class);
+                startActivity(intent);
             }
         });
     }
