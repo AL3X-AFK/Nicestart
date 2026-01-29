@@ -66,9 +66,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    /**
-     * The M on refresh listener.
-     */
     protected SwipeRefreshLayout.OnRefreshListener
             mOnRefreshListener = new SwipeRefreshLayout.OnRefreshListener() {
         @Override
@@ -139,6 +136,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
+        if(id == R.id.item2){
+            Intent intent = new Intent(MainActivity.this, MainBab.class);
+            startActivity(intent);
+        }
         if(id == R.id.item3){
 //            Creacion de alerta
             Alerter.create(this).
@@ -164,11 +165,6 @@ public class MainActivity extends AppCompatActivity {
         // setup the alert builder
         MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(this);
 
-        //el dialogo estandar tiene título/icono pero podemos sustituirlo por un XML a medida
-//        builder.setTitle("Achtung!");
-//        builder.setMessage("Where do you go?");
-//        builder.setIcon(R.drawable.usericon);
-//        builder.setCancelable(true);
 
         // un XML a medida para el diálogo
         builder.setView(getLayoutInflater().inflate(R.layout.alertdialog, null));
@@ -209,8 +205,8 @@ public class MainActivity extends AppCompatActivity {
         Button negative = dialog.getButton(AlertDialog.BUTTON_NEGATIVE);
         Button neutral = dialog.getButton(AlertDialog.BUTTON_NEUTRAL);
 
-        positive.setTextColor(ContextCompat.getColor(this, R.color.white));
-        negative.setTextColor(ContextCompat.getColor(this, R.color.white));
+        positive.setTextColor(ContextCompat.getColor(this, R.color.gray));
+        negative.setTextColor(ContextCompat.getColor(this, R.color.gray));
         neutral.setTextColor(ContextCompat.getColor(this, R.color.red));
     }
 

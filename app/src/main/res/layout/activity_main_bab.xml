@@ -4,14 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!--    &lt;!&ndash; Contenido principal &ndash;&gt;-->
-    <!--    <androidx.recyclerview.widget.RecyclerView-->
-    <!--        android:id="@+id/recyclerView"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="match_parent" />-->
-
-
-
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinator"
         android:layout_width="match_parent"
@@ -57,10 +49,7 @@
             app:navigationIconTint="@android:color/white"
             app:navigationIcon="@drawable/menu_hamburguer"
             app:hideOnScroll="true"
-
-
             />
-
 
         <!--            style="@style/Widget.MaterialComponents.BottomAppBar.PrimarySurface"-->
 
@@ -68,11 +57,12 @@
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/g4"
+            app:backgroundTint="@color/g5"
             android:src="@drawable/plus"
             app:fabSize="normal"
-            app:layout_anchor="@+id/bottom_app_bar"
+            app:layout_anchor="@id/bottom_app_bar"
             app:tint="@android:color/white" />
+
 
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
