@@ -79,6 +79,7 @@ Incluye opciones rápidas y un submenú:
   - Account  
 
   <img src="img/menu_appbar.png" alt="appbar_menu" width="300"/>
+<br>
 
 ## **4) Funciones Adicionales**
 
@@ -88,7 +89,6 @@ Incluye opciones rápidas y un submenú:
 | Muestra una alerta con animación desde arriba | Abre un activity que muestra mi perfil de GitHub | Muestra un Dialog con 3 opciones para el usuario:<br>- Salir de la aplicación<br>- No hacer nada<br>- Ir al Profile Activity |
 
 <br>
-
 
 Utilizo un **WebView** para mostrar directamente la página de mi perfil de GitHub dentro del activity, permitiendo una integración limpia y fluida sin necesidad de abrir un navegador externo.
 
@@ -107,9 +107,6 @@ Inlcuyo en Values las opciones para lenguajes en Ingles y Español.
 Ahora dependiento el idioma configurado en el dispositivo, se utilizara un valor u otro.
 <p><img src="img/languages1.png" width="500"/></p>
 
-
-<br>
-
 ### 🌒 Modo oscuro
 Creando en Values/Colors un nuevo archivo colors.xml estan los colores personalizados para el modo oscuro.
 | Modo Oscuro | Modo Claro |
@@ -117,7 +114,6 @@ Creando en Values/Colors un nuevo archivo colors.xml estan los colores personali
 | <p align="center"><img src="img/loginDark.png" width="200"/></p> | <p align="center"><img src="img/login.png" width="200"/></p> |
 | <p align="center"><img src="img/mainDark.png" width="200"/></p> | <p align="center"><img src="img/main2.png" width="200"/></p> |
 
-<br>
 
 ### 📱 Main Bab
 `MainBab` implementa una **Bottom App Bar** con comportamiento dinámico que mejora la experiencia de navegación del usuario.
@@ -140,8 +136,6 @@ Para acceder a esta `Activity` se hara desde el main, aparecera entre las opcion
 <br>
 <img src="img/OpenMainBab.png" width="300"/>
 
-<br>
-
 
 ### 🌐 **Pull request enviado**
 
@@ -162,8 +156,6 @@ android:textColor="@color/purple_700"
 app:startIconDrawable="@drawable/keyicon"
 app:hintTextColor="@color/purple_700"
 ```
-<br>
-
 
 
 ### 🌐 **Pull request recibido**
