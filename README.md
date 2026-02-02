@@ -9,18 +9,17 @@ Es un proyecto orientado al aprendizaje que implementa principios actuales de **
 <br>
 
 ## **Características principales**
-- Pantallas completas de **Splash**, **Login**, **Registro**, **Main** y **Profile**  
-- Interfaz basada en **Material Design**  
-- Navegación intuitiva con enfoque en la experiencia de usuario  
-- Código limpio, organizado y comentado  
-- Uso de menús contextuales, App Bar y Swipe Refresh  
+- Pantallas completas de **Splash**, **Login**, **Registro**, **Main**, **Profile** y **MainBab**.
+- Navegación intuitiva con enfoque en la experiencia de usuario.
+- Código limpio, organizado y comentado. 
+- Uso de menús contextuales, App Bar, Swipe Refresh, Toasts, entre otros.
 <br>
 
 ## **Tecnologías utilizadas**
 - **Lenguaje:** Kotlin  
 <br>
 
-# 📱 **Funciones de la Aplicación**
+# **Funciones de la Aplicación**
 
 
 ## **1) Splash Activity**
@@ -45,7 +44,7 @@ Incluye:
  
 <br>
 
-## **4) Main Activity**
+## **3) Main Activity**
 Pantalla principal donde se agrupan utilidades, menús, elementos visuales y ejemplos de interacción.  
 Cuenta con una función de *refresh* que al actualizar cambia la imagen.
 
@@ -81,15 +80,15 @@ Incluye opciones rápidas y un submenú:
 
   <img src="img/menu_appbar.png" alt="appbar_menu" width="300"/>
 
-## **5) Funciones Adicionales**
+## **4) Funciones Adicionales**
 
 | Show Alert | Github Profile | Dialog Alert |
 |------------|----------------|--------------|
 | <p align="center"><img src="img/showAlert.png" width="200"/></p> | <p align="center"><img src="img/githubProfile.png" width="200"/></p> | <p align="center"><img src="img/dialogAlert.png" width="200"/></p> |
 | Muestra una alerta con animación desde arriba | Abre un activity que muestra mi perfil de GitHub | Muestra un Dialog con 3 opciones para el usuario:<br>- Salir de la aplicación<br>- No hacer nada<br>- Ir al Profile Activity |
 
-Inlcuyo en Values las opciones para lenguajes en Ingles y Español
-<p><img src="img/languages1.png" width="500"/></p>
+<br>
+
 
 Utilizo un **WebView** para mostrar directamente la página de mi perfil de GitHub dentro del activity, permitiendo una integración limpia y fluida sin necesidad de abrir un navegador externo.
 
@@ -101,6 +100,14 @@ miVisorWeb = findViewById(R.id.vistaweb);
 miVisorWeb.getSettings().setJavaScriptEnabled(true);
 miVisorWeb.loadUrl("https://github.com/AL3X-AFK");
 ```
+
+
+### ㊗️ Idiomas
+Inlcuyo en Values las opciones para lenguajes en Ingles y Español.
+Ahora dependiento el idioma configurado en el dispositivo, se utilizara un valor u otro.
+<p><img src="img/languages1.png" width="500"/></p>
+
+
 <br>
 
 ### 🌒 Modo oscuro
@@ -111,6 +118,30 @@ Creando en Values/Colors un nuevo archivo colors.xml estan los colores personali
 | <p align="center"><img src="img/mainDark.png" width="200"/></p> | <p align="center"><img src="img/main2.png" width="200"/></p> |
 
 <br>
+
+### 📱 Main Bab
+`MainBab` implementa una **Bottom App Bar** con comportamiento dinámico que mejora la experiencia de navegación del usuario.
+<br>
+**Scroll hacia abajo:** la barra se oculta automáticamente
+<br>
+**Scroll hacia arriba:** la barra vuelve a mostrarse
+<br>
+<img src="img/MainBab.png" width="200"/>
+
+La Bottom App Bar incluye un **menú desplegable** con distintas acciones disponibles.
+<br>
+<img src="img/MainBabMenu.png" width="300"/>
+
+Al seleccionar cualquiera de las opciones del menú, se muestra un `Toast` informativo indicando la acción seleccionada.
+<br>
+<img src="img/MainBabToast.png" width="300"/>
+
+Para acceder a esta `Activity` se hara desde el main, aparecera entre las opciones del menú superior.
+<br>
+<img src="img/OpenMainBab.png" width="300"/>
+
+<br>
+
 
 ### 🌐 **Pull request enviado**
 
