@@ -36,30 +36,13 @@ Incluye:
 
 <br>
 
-## **2) Login Activity**
-Pantalla para iniciar sesión.
+## 2) Login y Signup
 
-Características:
-- Botón para ir a Registro  
-- Diseño minimalista y accesible  
-- Validación básica de campos  
-
-
-  <img src="img/login.png" alt="login_activity" width="280"/>
-
-<br>
-
-## **3) Signup Activity**
-Pantalla para que nuevos usuarios se registren.
-
-Incluye:
-- Distribución clara y legible  
-- Estética coherente con Login  
-- Campos organizados y bien espaciados  
-
-
-  <img src="img/signup.png" alt="signup_activity" width="280"/>
-
+| Login Activity | Signup Activity |
+|----------------|----------------|
+| <img src="img/login.png" alt="login_activity" width="280"/> | <img src="img/signup.png" alt="signup_activity" width="280"/> |
+| **Pantalla para iniciar sesión** <br> - Botón para ir a Registro <br> - Diseño minimalista y accesible <br> - Validación básica de campos | **Pantalla para registro de nuevos usuarios**  <br>  - Distribución clara y legible  <br> - Estética coherente con Login <br> - Campos organizados y bien espaciados |
+ 
 <br>
 
 ## **4) Main Activity**
